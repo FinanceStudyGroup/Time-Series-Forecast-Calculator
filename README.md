@@ -33,7 +33,7 @@ Using a moving average, we can extract the centered moving average of the data. 
 data by the centered moving average, we can calculate for the seasonality of the data.
 
 Using the calculated seasonality terms for each quarter, we can deseasonalize the data provided, then extract the trend
-component of the time series using linear regression, finally, the forecasted data consist of the row-wise
+component of the time series using linear regression. Finally, the forecasted data consist of the row-wise
 multiplication of the seasonality vector times the trend vector. Historically the actual data are kept,
 while into the future, the projected data are appended to the matrix.
 
