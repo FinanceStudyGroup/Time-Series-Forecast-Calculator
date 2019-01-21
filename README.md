@@ -1,5 +1,5 @@
 # MATLAB Time Series Forecast Calculator
-This is a simple time series forecasting calculator for making first-cut forecasts of accounting data
+This is a simple time series forecasting calculator for making first-cut forecasts of accounting data.
 
 -----------------------------------------------------------------------------------------------------------------
 To use this function, you might collect accounting data from a financial model in Excel. These data could be Revenue,
