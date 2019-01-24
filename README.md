@@ -3,10 +3,8 @@ This is a simple time series forecasting calculator for making first-cut forecas
 
 -----------------------------------------------------------------------------------------------------------------
 To use this function, you might collect accounting data from a financial model in Excel. These data could be Revenue,
-Cost of Goods Sold, or other major recurring items. Using MATLAB Spreadsheet Link, these data could be imported as
+Cost of Goods Sold, or other major recurring items. Using MATLAB [Spreadsheet Link](https://www.mathworks.com/products/excellink.html), these data could be imported as
 named variables into an instance of MATLAB.
-
-https://www.mathworks.com/products/excellink.html
 
 Within MATLAB this function can be used to produce first-cut forecasts of these major financial model value drivers.
 
