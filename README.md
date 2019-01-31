@@ -22,6 +22,8 @@ function presents projected data in unrounded form, while the simple version rou
 
 -----------------------------------------------------------------------------------------------------------------
 
+![](Images/Forecast(RevenueEW,2).png)
+
 What is time series forecasting? Time series forecasting is a method of predicting the behavior of regular
 time series data. These data are characterized by being able to be collected at a regular interval, such that
 they're assumed to be evenly spaced in time, and they're also expected to consist of seasonality and a general trend.
