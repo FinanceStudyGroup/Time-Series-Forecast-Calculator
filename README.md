@@ -26,11 +26,15 @@ What is time series forecasting? Time series forecasting is a method of predicti
 time series data. These data are characterized by being able to be collected at a regular interval, such that
 they're assumed to be evenly spaced in time, and they're also expected to consist of seasonality and a general trend.
 
-The idea behind time series forecasting here is that we can extract from the historical time series data, elements
-of a multiplicative model that describes the interaction between the different components of the signal.
+In the classical models of time series forecasting, seasonality can take either an additive or multiplicative form.
+These methods use moving averages coupled with a seasonality term describing the characteristic level of
+additive or multiplicative variation about the moving average trend of the data.
 
-Using a moving average, we can extract the centered moving average of the data. By dividing each matching element of
-data by the centered moving average, we can calculate for the seasonality of the data.
+The idea behind time series forecasting is that we can extract from the historical time series data, elements
+of a multiplicative or additive model that describes the interaction between the different components of the signal.
+
+In the multiplicative model, using a moving average, we can extract the centered moving average of the data.
+By dividing each matching element of data by the centered moving average, we can calculate for the seasonality.
 
 Using the calculated seasonality terms for each quarter, we can deseasonalize the data provided, then extract the trend
 component of the time series using linear regression. Finally, the forecasted data consist of the row-wise
@@ -40,3 +44,7 @@ while into the future, the projected data are appended to the matrix.
 Finally this last vector is output as either the combined historical- and projected data row- or column vector, 
 or as simply a projected data vector, in our case, depending on the version of the function used. Here, horizontal data
 will be re-converted to horizontal form, but the calculations are performed using a matrix of column vectors.
+
+The additive model makes use of a very similar technique, where seasonality is taken to consist of the values
+of the actual data minus the trend, and then having projected the trend forward, the projected time series is
+taken to consist of the trend term plus the additive seasonalities, corresponding to each quarter in our case.
