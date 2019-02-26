@@ -298,6 +298,12 @@ set(ProjectedChart,'FaceColor',[79/255 129/255 189/255],'EdgeColor','none');
 xticks([0:4:TotalLength]);
 ax=gca;
 ax.YGrid='on';
+% Get rid of scientific notation
+ax.YRuler.Exponent = 0;
+% Get rid of tick marks
+set(gca,'TickLength',[0,0]);
+% Include commas in the y-tick format
+ytickformat('%,4.4g');
 
 % Description and Attributes
 title('Historical and Projected Time Series Data');
