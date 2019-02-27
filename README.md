@@ -10,11 +10,15 @@ Within MATLAB this function can be used to produce first-cut forecasts of these 
 
 Example function call syntax could be,
 
+```
 Forecast(RevenueEW,2);
+```
 
 or
 
+```
 ForecastSimple(RevenueEW,2);
+```
 
 where, depending on the version of the function used, you can produce an output consisting of historical- and
 projected data, or just the projected data, rounded to 1 decimal place, as you see fit. The full version of the
