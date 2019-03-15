@@ -51,6 +51,6 @@ Finally this last vector is output as either the combined historical- and projec
 or as simply a projected data vector, in our case, depending on the version of the function used. Here, horizontal data
 will be re-converted to horizontal form, but the calculations are performed using a matrix of column vectors.
 
-(The additive model makes use of a very similar technique, where seasonality is taken to consist of the values
+The additive model makes use of a very similar technique, where seasonality is taken to consist of the values
 of the actual data minus the trend, and then having projected the trend forward, the projected time series is
-taken to consist of the trend term plus the additive seasonalities, corresponding to each quarter in our case.)
+taken to consist of the trend term plus the additive seasonalities, corresponding to each quarter in our case.
